@@ -317,12 +317,15 @@ nav ul li a{
         align-items: center;
         width: 100%;
         background-color: white;
-        height: 4rem;
+        height: 5rem;
     }
     #small{
         display: block;
         border: none;
         background-color: white;
+    }
+    #small img{
+        height: 1.5rem;
     }
 
     #menu{
@@ -337,7 +340,7 @@ nav ul li a{
     }
     nav ul{
         width: 30%;
-        height: 8rem;
+        height: 10rem;
         display: flex;
         flex-direction: column;
         list-style: none;
@@ -359,7 +362,8 @@ nav ul li a{
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin: 0.5rem;
+        
+        margin-top: 1rem;
     }
     nav ul li a{
         text-decoration: none;
@@ -368,13 +372,14 @@ nav ul li a{
     .active{
         background-color: var(--bg-black);
         height: 30%;
-        margin: auto;
+        /* margin: auto; */
         width: 90%;    
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 0.7rem;
+        margin-top: 0.5rem;
     }
   
     
