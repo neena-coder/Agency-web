@@ -303,7 +303,7 @@ nav ul li a{
     text-decoration: none;
     color: white;
     font-weight: bolder;
-}
+}   
 
 
 
@@ -381,16 +381,17 @@ nav ul li a{
     .first {
         background-image: url(./mobile/image-hero.jpg);
         background-repeat: no-repeat;
-        background-position: top right ;
+        background-position: top center;
         background-size: cover;
         max-width: 100%;
         height: 60vh;
-        padding: 10rem 3rem 0rem;
+        padding: 5rem 3rem 0rem;
         color: var(--bg-black);
         text-align: center;
         display: flex;
         align-items: center;
         flex-direction: column;
+        z-index: 0;
         
     }
     .head{
@@ -403,14 +404,14 @@ nav ul li a{
     }
     .first p{
         width: 100%;
-        padding: 0rem 2rem;
+        padding: 0rem 3rem;
     }
     
     .first .learn{
         color: white;
         background-color: var(--red);
         text-decoration: none; 
-        padding: 1rem; 
+        padding: 1rem 2rem; 
         max-width: 150px; 
         text-align: center;
         margin-top: 1rem;
@@ -434,7 +435,7 @@ nav ul li a{
     
     .second .left{
         width: 100%;
-        height: 50vh;
+        height: 50%;
         background-image: url(./desktop/image-strategic.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -444,7 +445,7 @@ nav ul li a{
     }
     .second .right img{
         float: left;
-        z-index: 15;
+        z-index: 0;
         margin-left: 0rem;
         margin-top: -1.5rem;
         height:4rem;
@@ -454,9 +455,10 @@ nav ul li a{
     .second .right{
         background-color: var(--bg-black);
         color: white;
-        padding: 0rem 0rem 5rem 0rem ;
+        padding: 0rem 0rem 0rem 0rem ;
         width: 100%;
-        z-index: 14;
+        height: 50%;
+        z-index: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -475,8 +477,8 @@ nav ul li a{
     }
     
     .third{
-        z-index: 5;
-        margin-top: -10rem;
+        z-index: 0;
+        margin-top: 1rem;
         /* position: absolute; */
         display: flex;
         height: 100vh;
@@ -485,7 +487,7 @@ nav ul li a{
     }
     .third .left{
         width: 100%;
-        z-index: 17;
+        z-index: 0;
         padding: 5rem 10rem ;
         text-align: center;
         margin-right: -5rem;
@@ -531,7 +533,298 @@ nav ul li a{
         width: 70%;
         
     }
+
+
+.fourth{    
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 6;
+    margin-top: 0rem;
+        
+}
+
+.fourth .left{
+    background-color: var(--bg-black);
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    z-index: 0;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding: 3rem;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fourth .left img{
+    margin-right: 0rem;
+    margin-left: 0rem;
+
+
+}
+
+.fourth .left p{
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.fourth .left .contain div{
+    display: flex;
+    margin: auto;
+    margin-top: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-bottom: 0rem;
+
+}
+
+.fourth .left .contain div button{
+    border: none;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+.fourth .right{
+    width: 100%;
+    height: 150vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    margin-left: auto;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-top: 0rem;
+}
+
+.right img{
+    width: 100%;
+    height: 100vh;
+}
+
+.fourth .right .contain{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 2rem;
+    z-index: 15;    
+    position: absolute;
+    color: white;
+    font-weight: bolder;
+    width: 70%;
+    background: linear-gradient(to top, black, transparent);
+
+}
+.fifth{
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+.fifth p{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.fifth a{
+    background-color: var(--red);
+    padding: 1rem;
+    height: 3rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    margin-top: 2rem;
+}   
     
+    
+}
+
+@media screen and (max-width: 500px){
+    :root{
+        font-size: 0.7rem;
+    }
+    
+    
+    .first {
+        background-image: url(./mobile/image-hero.jpg);
+        background-repeat: no-repeat;
+        background-position: top right -250px;
+        background-size: cover;
+        max-width: 100%;
+        height: 80vh;
+        /* padding: 5rem 3rem 0rem; */
+        color: var(--bg-black);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        z-index: 0;
+        
+    }
+   
+    .head span{
+        color: var(--red);
+    }
+    .write{
+        width: 100%;
+        padding: 0rem 1rem;
+        font-size: 1.5rem;
+    }
+    .head{
+        font-size: 4rem;
+        font-weight: bolder;
+        margin-top: 5rem;
+
+    }
+    
+    .first .learn{
+        color: white;
+        background-color: var(--red);
+        text-decoration: none; 
+        padding: 1rem 2rem; 
+        /* max-width: 200px;  */
+        text-align: center;
+        margin-top: 1rem;
+        
+    }
+    
+    .contain .learn a{
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+    }
+    
+    .second{
+        display: flex;
+        height: 100vh;
+        z-index: 0;
+        flex-direction: column;
+        /* position: absolute; */
+    
+    }
+    
+    .second .left{
+        width: 100%;
+        height: 50vh;
+        background-image: url(./desktop/image-strategic.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        
+    }
+    .second .right img{
+        float: left;
+        z-index: 0;
+        margin-left: 0rem;
+        margin-top: -1.5rem;
+        height:4rem;
+        width: 7rem;
+        margin-bottom: 1rem;
+    }
+    
+    .second .right{
+        background-color: var(--bg-black);
+        color: white;
+        padding: 0rem;
+        width: 100%;
+        height: 60%;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center;
+        text-align: center; */
+    }
+    
+    .second a{
+        text-decoration: underline 2px green;
+        color: green;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .second p{
+        width: 100%;
+        margin: 0rem;
+        padding: 1rem;
+    }
+    
+    .third{
+        z-index: 0;
+        margin-top: 1rem;
+        /* position: absolute; */
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+    
+    }
+    .third .left{
+        width: 100%;
+        z-index: 0;
+        /* padding: 5rem 10rem ; */
+        text-align: center;
+        /* margin-right: -5rem; */
+        font-weight: bolder;
+        font-size: 2.2rem;
+    }
+    .third .right{
+        background-color: var(--red);
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem 0rem 0rem ;
+        margin-right: 0rem;
+        z-index: 0;
+        color: white;
+        
+    }
+    
+    .third .contain{
+        width: 70%;
+        margin: auto;
+        
+    
+    }
+    .third .contain .back{
+        z-index: 10;
+        position: absolute;
+        font-weight: bolder;
+        font-size: 4rem;
+        opacity: 0.3;
+    }
+    
+    .third .contain .main{
+        z-index: 0;
+        padding: 2rem 1.5rem;
+        
+    }
+    
+    .third .contain .main p:first-child{
+        font-weight: bolder;
+        font-size: 1.6rem;
+        
+    }
+    
+    
+    .third .contain .main p:last-child{
+        font-size: 1.4rem;
+        width: 100%;
+        
+    }
     .fourth{    
         height: 100vh;
         width: 100%;
@@ -539,31 +832,29 @@ nav ul li a{
         flex-direction: column;
         position: absolute;
         z-index: 6;
+        margin-top: 0rem;
+            
     }
     
     .fourth .left{
         background-color: var(--bg-black);
         width: 100%;
-        /* z-index: 20; */
+        height: 50%;
+        text-align: center;
+        z-index: 0;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        padding: 3rem;
         position: absolute;
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
         flex-direction: column;
-        padding: 3rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        height: 30%;
     }
     
     .fourth .left img{
         margin-right: 0rem;
-        margin-left: auto;
-        margin: 2rem auto;
-        /* margin-bottom: -4rem; */
+        margin-left: 0rem;
     
     
     }
@@ -571,50 +862,47 @@ nav ul li a{
     .fourth .left p{
         color: white;
         font-size: 2rem;
-        width: 70%;
+        width: 100%;
     }
     
-    .fourth .left .contain{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
     .fourth .left .contain div{
         display: flex;
         margin: auto;
         margin-top: 1rem;
+        justify-content: center;
+        margin-bottom: 2rem;
+        margin-bottom: 0rem;
     
     }
     
     .fourth .left .contain div button{
         border: none;
-        background-color: none;
         height: 4rem;
         width: 4rem;
+        border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 50%;
+        margin-top: 1rem;
     
     }
     
     .fourth .right{
         width: 100%;
-        height: 800px;
+        height: 150vh;
         background-repeat: no-repeat;
         background-size: cover;
-        /* z-index: 19; */
+        z-index: 0;
         margin-left: auto;
         display: flex;
         justify-content: end;
         align-items: end;
+        margin-top: 0rem;
     }
     
     .right img{
         width: 100%;
-        height: 100%;
+        height: 100vh;
     }
     
     .fourth .right .contain{
@@ -626,7 +914,7 @@ nav ul li a{
         position: absolute;
         color: white;
         font-weight: bolder;
-        width: 100%;
+        width: 70%;
         background: linear-gradient(to top, black, transparent);
     
     }
@@ -635,13 +923,12 @@ nav ul li a{
         padding: 5rem;
         display: flex;
         justify-content: space-between;
-        /* z-index: 24; */
-        position: relative;
+        flex-direction: column;
+        text-align: center;
     }
     .fifth p{
         font-weight: bolder;
         font-size: 2rem;
-        text-align: center;
     }
     
     .fifth a{
@@ -651,70 +938,124 @@ nav ul li a{
         text-decoration: none;
         color: white;
         font-weight: bolder;
-    }
-    
+        margin-top: 2rem;
+    }   
+       
     
 }
 
-@media screen and (max-width: 500px){
-
+@media screen and (max-width: 380px) {
     .first {
         background-image: url(./mobile/image-hero.jpg);
         background-repeat: no-repeat;
-        background-position: top right ;
+        background-position: top right -250px;
         background-size: cover;
         max-width: 100%;
-        height: 60vh;
-        padding: 7rem 1rem 0rem;
+        height: 80vh;
+        padding: 0rem;
         color: var(--bg-black);
         text-align: center;
         display: flex;
-        /* justify-content: center; */
         align-items: center;
         flex-direction: column;
+        z-index: 0;
         
+    }
+   
+    .head span{
+        color: var(--red);
+    }
+    .write{
+        width: 100%;
+        padding: 0rem;
+        font-size: 1.3rem;
+    }
+    .head{
+        font-size: 4rem;
+        font-weight: bolder;
+        margin-top: 3rem;
+
+    }
+    
+    .first .learn{
+        color: white;
+        background-color: var(--red);
+        text-decoration: none; 
+        padding: 1rem 2rem; 
+        /* max-width: 200px;  */
+        text-align: center;
+        margin-top: 1rem;
+        
+    }
+    
+    .contain .learn a{
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+    }
+
+    .third{
+        z-index: 0;
+        margin-top: 1rem;
+        /* position: absolute; */
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+    
     }
     .third .left{
         width: 100%;
-        z-index: 17;
-        padding: 5rem 2rem 0rem;
-        height: 20rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        z-index: 0;
+        padding: 0rem ;
+        margin: 2rem 0rem ;
         text-align: center;
-        margin-right: -5rem;
+        margin-right: 0rem;
         font-weight: bolder;
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     .third .right{
         background-color: var(--red);
         width: 100%;
-        height: 80%;
+        height: 100%;
         padding: 1rem ;
         margin-right: 0rem;
-        z-index: 16;
+        z-index: 0;
         color: white;
         
     }
-    .fifth{
+    
+    .third .contain{
         width: 100%;
-        padding: 5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        /* z-index: 24; */
-        position: relative;
+        margin: auto;
+        
+    
     }
-
-    .fifth a{
-        background-color: var(--red);
-        padding: 1rem;
-        height: 3rem;
-        text-decoration: none;
-        color: white;
+    .third .contain .back{
+        z-index: 10;
+        position: absolute;
         font-weight: bolder;
-        margin-top: 1rem;
+        font-size: 4rem;
+        opacity: 0.3;
     }
+    
+    .third .contain .main{
+        z-index: 0;
+        padding: 2rem 1.5rem;
+        
+    }
+    
+    .third .contain .main p:first-child{
+        font-weight: bolder;
+        font-size: 1.6rem;
+        
+    }
+    
+    
+    .third .contain .main p:last-child{
+        font-size: 1.4rem;
+        width: 100%;
+        
+    }
+   
     
 }
