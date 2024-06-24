@@ -1,0 +1,720 @@
+
+*{
+    /* border: 1px solid red; */
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+:root {
+    --red: #F94F4F;
+    --bg-black: #191921;
+    --white: #fff;
+    --black: #000;
+    /* font-size: .625rem; */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#small{
+    display: none;
+}
+
+nav img{
+    display: block;
+    height: 2rem;
+    margin: 0rem 4rem;
+}
+nav .big{
+    width: 50%;
+    height: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    background-color: var(--red);
+    padding: 0rem 5rem 0rem 0rem;
+    
+}
+#menu{
+    display: none;
+}
+nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active{
+    background-color: var(--bg-black);
+    height: 60%;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first{
+    width: 100%;
+    height: 100vh;
+    /* padding: 3rem; */
+}
+
+.first {
+    background-image: url(./desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center right ;
+    background-size: contain;
+    max-width: 100%;
+    height: 90vh;
+    padding: 3rem;
+    color: var(--bg-black);
+    
+}
+.head{
+    font-size: 5rem;
+    font-weight: bolder;
+    margin-top: 5rem;
+}
+.head span{
+    color: var(--red);
+}
+.first p{
+    width: 50%;
+}
+
+.first .learn{
+    color: white;
+    background-color: var(--red);
+    text-decoration: none; 
+    padding: 1rem; 
+    max-width: 150px; 
+    text-align: center;
+    margin-top: 1rem;
+    
+}
+
+.contain .learn a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.second{
+    display: flex;
+    height: 100vh;
+    z-index: 0;
+    /* position: absolute; */
+
+}
+
+.second .left{
+    width: 50%;
+    background-image: url(./desktop/image-strategic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+.second .right img{
+    float: left;
+    z-index: 15;
+    margin-left: -10rem;
+    margin-top: 6rem;
+    height:4rem;
+    width: 7rem;
+}
+
+.second .right{
+    background-color: var(--bg-black);
+    color: white;
+    padding: 5rem 0rem 0rem 5rem ;
+    width: 50%;
+    z-index: 14;
+}
+
+.second a{
+    text-decoration: underline 2px green;
+    color: green;
+    margin-top: 1rem;
+}
+
+.second p{
+    width: 50%;
+}
+
+.third{
+    z-index: 5;
+    margin-top: -10rem;
+    /* position: absolute; */
+    display: flex;
+    height: 100vh;
+
+}
+.third .left{
+    width: 40%;
+    z-index: 17;
+    padding: 25rem 0rem 0rem 15rem ;
+    margin-right: -5rem;
+    font-weight: bolder;
+    font-size: 2.2rem;
+}
+.third .right{
+    background-color: var(--red);
+    width: 64.7%;
+    height: 100%;
+    padding: 15rem 10rem 10rem 20rem ;
+    margin-right: -5rem;
+    z-index: 16;
+    color: white;
+}
+
+/* .third .contain{
+    
+
+} */
+.third .contain .back{
+    z-index: 10;
+    position: absolute;
+    font-weight: bolder;
+    font-size: 4rem;
+    opacity: 0.3;
+}
+
+.third .contain .main{
+    z-index: 15;
+    padding: 2rem 1.5rem;
+}
+
+.third .contain .main p:first-child{
+    font-weight: bolder;
+    font-size: 1.6rem;
+    
+}
+
+
+.third .contain .main p:last-child{
+    font-size: 1.4rem;
+    width: 70%;
+    
+}
+
+.fourth{    
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 6;
+        
+}
+
+.fourth .left{
+    background-color: var(--bg-black);
+    width: 40%;
+    height: 60vh;
+    /* z-index: 20; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fourth .left img{
+    margin-right: -4rem;
+    margin-left: auto;
+
+
+}
+
+.fourth .left p{
+    color: white;
+    font-size: 2rem;
+    width: 70%;
+}
+
+.fourth .left .contain div{
+    display: flex;
+    margin: auto;
+    margin-top: 1rem;
+
+}
+
+.fourth .left .contain div button{
+    border: none;
+
+}
+
+.fourth .right{
+    width: 70%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* z-index: 19; */
+    margin-left: auto;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.right img{
+    width: 100%;
+    height: 100vh;
+}
+
+.fourth .right .contain{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 2rem;
+    z-index: 15;    
+    position: absolute;
+    color: white;
+    font-weight: bolder;
+    width: 70%;
+    background: linear-gradient(to top, black, transparent);
+
+}
+.fifth{
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    /* z-index: 24; */
+    position: relative;
+}
+.fifth p{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.fifth a{
+    background-color: var(--red);
+    padding: 1rem;
+    height: 3rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+
+
+@media screen and (max-width: 1210px) {
+    :root{
+        font-size: 0.9rem;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        height: 4rem;
+    }
+    #small{
+        display: block;
+        border: none;
+        background-color: white;
+    }
+
+    #menu{
+        display: none;
+
+    }
+    
+    nav img{
+        display: block;
+        height: 2rem;
+        /* margin: 0rem 4rem; */
+    }
+    nav ul{
+        width: 30%;
+        height: 8rem;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        background-color: var(--red);
+        padding: 0rem;
+        margin-top: 5rem;
+        z-index: 30;
+        position: absolute;
+        right: 50px;
+        top: 0px;
+        border-radius: 1rem;
+    }
+    nav .big{
+        display: none;
+    }
+    
+    nav ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0.5rem;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    .active{
+        background-color: var(--bg-black);
+        height: 30%;
+        margin: auto;
+        width: 90%;    
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.7rem;
+    }
+  
+    
+    .first {
+        background-image: url(./mobile/image-hero.jpg);
+        background-repeat: no-repeat;
+        background-position: top right ;
+        background-size: cover;
+        max-width: 100%;
+        height: 60vh;
+        padding: 10rem 3rem 0rem;
+        color: var(--bg-black);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .head{
+        font-size: 3rem;
+        font-weight: bolder;
+        margin-top: 0rem;
+    }
+    .head span{
+        color: var(--red);
+    }
+    .first p{
+        width: 100%;
+        padding: 0rem 2rem;
+    }
+    
+    .first .learn{
+        color: white;
+        background-color: var(--red);
+        text-decoration: none; 
+        padding: 1rem; 
+        max-width: 150px; 
+        text-align: center;
+        margin-top: 1rem;
+        
+    }
+    
+    .contain .learn a{
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+    }
+    
+    .second{
+        display: flex;
+        height: 100vh;
+        z-index: 0;
+        flex-direction: column;
+        /* position: absolute; */
+    
+    }
+    
+    .second .left{
+        width: 100%;
+        height: 50vh;
+        background-image: url(./desktop/image-strategic.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        
+    }
+    .second .right img{
+        float: left;
+        z-index: 15;
+        margin-left: 0rem;
+        margin-top: -1.5rem;
+        height:4rem;
+        width: 7rem;
+    }
+    
+    .second .right{
+        background-color: var(--bg-black);
+        color: white;
+        padding: 0rem 0rem 5rem 0rem ;
+        width: 100%;
+        z-index: 14;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .second a{
+        text-decoration: underline 2px green;
+        color: green;
+        margin-top: 1rem;
+    }
+    
+    .second p{
+        width: 50%;
+        margin: 1rem;
+    }
+    
+    .third{
+        z-index: 5;
+        margin-top: -10rem;
+        /* position: absolute; */
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+    
+    }
+    .third .left{
+        width: 100%;
+        z-index: 17;
+        padding: 5rem 10rem ;
+        text-align: center;
+        margin-right: -5rem;
+        font-weight: bolder;
+        font-size: 2.2rem;
+    }
+    .third .right{
+        background-color: var(--red);
+        width: 100%;
+        height: 100%;
+        padding: 5rem 1rem 0rem 10rem ;
+        margin-right: 0rem;
+        z-index: 16;
+        color: white;
+    }
+    
+    /* .third .contain{
+        
+    
+    } */
+    .third .contain .back{
+        z-index: 10;
+        position: absolute;
+        font-weight: bolder;
+        font-size: 4rem;
+        opacity: 0.3;
+    }
+    
+    .third .contain .main{
+        z-index: 15;
+        padding: 2rem 1.5rem;
+    }
+    
+    .third .contain .main p:first-child{
+        font-weight: bolder;
+        font-size: 1.6rem;
+        
+    }
+    
+    
+    .third .contain .main p:last-child{
+        font-size: 1.4rem;
+        width: 70%;
+        
+    }
+    
+    .fourth{    
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 6;
+    }
+    
+    .fourth .left{
+        background-color: var(--bg-black);
+        width: 100%;
+        /* z-index: 20; */
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 30%;
+    }
+    
+    .fourth .left img{
+        margin-right: 0rem;
+        margin-left: auto;
+        margin: 2rem auto;
+        /* margin-bottom: -4rem; */
+    
+    
+    }
+    
+    .fourth .left p{
+        color: white;
+        font-size: 2rem;
+        width: 70%;
+    }
+    
+    .fourth .left .contain{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .fourth .left .contain div{
+        display: flex;
+        margin: auto;
+        margin-top: 1rem;
+    
+    }
+    
+    .fourth .left .contain div button{
+        border: none;
+        background-color: none;
+        height: 4rem;
+        width: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    
+    }
+    
+    .fourth .right{
+        width: 100%;
+        height: 800px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* z-index: 19; */
+        margin-left: auto;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+    
+    .right img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .fourth .right .contain{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding: 2rem;
+        z-index: 15;    
+        position: absolute;
+        color: white;
+        font-weight: bolder;
+        width: 100%;
+        background: linear-gradient(to top, black, transparent);
+    
+    }
+    .fifth{
+        width: 100%;
+        padding: 5rem;
+        display: flex;
+        justify-content: space-between;
+        /* z-index: 24; */
+        position: relative;
+    }
+    .fifth p{
+        font-weight: bolder;
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .fifth a{
+        background-color: var(--red);
+        padding: 1rem;
+        height: 3rem;
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+    }
+    
+    
+}
+
+@media screen and (max-width: 500px){
+
+    .first {
+        background-image: url(./mobile/image-hero.jpg);
+        background-repeat: no-repeat;
+        background-position: top right ;
+        background-size: cover;
+        max-width: 100%;
+        height: 60vh;
+        padding: 7rem 1rem 0rem;
+        color: var(--bg-black);
+        text-align: center;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .third .left{
+        width: 100%;
+        z-index: 17;
+        padding: 5rem 2rem 0rem;
+        height: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-right: -5rem;
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+    .third .right{
+        background-color: var(--red);
+        width: 100%;
+        height: 80%;
+        padding: 1rem ;
+        margin-right: 0rem;
+        z-index: 16;
+        color: white;
+        
+    }
+    .fifth{
+        width: 100%;
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* z-index: 24; */
+        position: relative;
+    }
+
+    .fifth a{
+        background-color: var(--red);
+        padding: 1rem;
+        height: 3rem;
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+        margin-top: 1rem;
+    }
+    
+}

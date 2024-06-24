@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency web</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var images = [
+                './desktop/image-slide-1.jpg',
+                './desktop/image-slide-2.jpg',
+                './desktop/image-slide-3.jpg'
+            ];
+
+            var texts = [
+                'Brand naming & guidelines',
+                'Brand identity & merchandise',
+                'Brand identity & merchandise'
+            ];
+            var currentIndex = 0;
+
+            function updateContent() {
+                $('#display').slideUp(450, function(){
+                    $(this).attr('src', images[currentIndex]).slideDown(450);
+                });
+                $('#text').slideUp(500, function(){
+                    $(this).text(texts[currentIndex]).slideDown(500);
+                });
+            }   
+
+            $('#prevButton').click(function() {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                updateContent();
+            });
+
+            $('#nextButton').click(function() {
+                currentIndex = (currentIndex + 1) % images.length;
+                updateContent();
+            });
+
+            updateContent();
+
+            $('#small').click(function(){
+                $('#menu').slideToggle();
+            });
+        }); 
+    </script>
+
+</head>
+<body>
+    <nav class="nav-bar">
+        <img src="./desktop/logo.svg" alt="">
+        <ul class="big">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li class="active"><a href="#">Schedule a call</a></li>
+        </ul>
+        <ul id="menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li class="active"><a href="#">Schedule a call</a></li>
+        </ul>
+
+        <button id="small"><img src="./mobile/icon-hamburger.svg"></button>
+
+    </nav>
+
+    <main class="contain">
+        <div class="first">
+            <p class="head">Branding & </br>website design </br>agency</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, esse doloremque ex est enim sunt ducimus optio fugiat nesciunt consequatur recusandae repellendus eveniet voluptas blanditiis quasi pariatur sequi modi aperiam! Temporibus recusandae debitis iusto fuga non quidem nostrum voluptatum? Sit tempore at voluptatem aspernatur quo numquam in velit ullam architecto repellendus accusamus, fugit magnam recusandae ad temporibus modi sed! Similique.</p>
+        
+            <div class="learn" ><a href="#">Learn more</a></div>
+
+        </div>
+
+        <div class="second">
+            <div class="left">
+                
+            </div>
+            <div class="right">
+                <img src="./desktop/bg-pattern-wave-red.svg" alt="">
+                <p class="head"><span>Design</span> is </br>Strategic.</p>
+                <p>"A well-crafted design strategy consistently produces desired outcomes and brand awareness. We are firm believers that success lies in creative collaboration with our clients."</p>
+
+                <a href="#" style="margin-top: 2rem;">Schedule a call</a>
+            </div>
+        </div>
+
+        <div class="third">
+            <div class="left">
+                <p>Our approach for creating a winning brand</p>
+
+            </div>
+            <div class="right">
+                <div class="main">
+                    <div class="contain">
+                        <div class="back">
+                            <p>01</p>
+                        </div>
+                        <div class="main">
+                            <p>Brand Strategy</p>
+                            <p>Brand strategy is critical for long-term success. Outshining competitors and capturing the target audience are key.</p>
+                        </div>
+                    </div>
+    
+                    <div class="contain">
+                        <div class="back">
+                            <p>02</p>
+                        </div>
+                        <div class="main">
+                            <p>Brand Designs</p>
+                            <p>Keeping the brand design unique and meaningful helps in communicating the brand's value effectively.</p>
+                        </div>
+                    </div>
+    
+                    <div class="contain">
+                        <div class="back">
+                            <p>03</p>
+                        </div>
+                        <div class="main">
+                            <p>Web Design</p>
+                            <p>A beautifully crafted website is the best tool for brand awareness, and ultimately results in increased revenues.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="fourth">
+            <div class="content">
+                <div class="left">
+                    <div class="contain">
+                        <p id="text">Brand naming & guidelines</p>
+                        <div style="display: flex; flex-direction: row;"> 
+                            <button id="prevButton"><img src="./desktop/icon-arrow-previous.svg" alt=""></button>
+                            <button id="nextButton" style="margin-left: 4rem;"><img src="./desktop/icon-arrow-next.svg" alt=""></button></div>
+                    </div>
+    
+                    <img  src="./desktop/bg-pattern-wavy-white.svg" alt="">
+                    
+                </div>
+                <div class="right">
+    
+                    <div class="contain">
+                        <p>Lean Production Roadmap</p>
+                        <p>2019 Project</p>
+                    </div>
+
+                    <img id="display" src="./desktop/image-slide-1.jpg" alt="">
+                    
+                </div>
+            </div>
+
+            <div class="fifth">
+                <p>Build Something </br> together</p>
+                <a href="#">Schedule a call</a>
+            </div>
+        </div>
+
+        
+        
+
+    </main>
+    
+</body>
+</html>
